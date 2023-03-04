@@ -1,0 +1,241 @@
+---
+title:  "Markdown 연습"
+date:   2022-11-22
+categories: [Blog Setting, Markdown]
+---
+
+
+
+# **제목**
+```markdown
+# 제목 1
+## 제목 2
+### 제목 3
+#### 제목 4
+##### 제목 5
+###### 제목 6
+```
+`<h6>`까지만 지원한다고 함.
+```markdown
+제목
+=====
+
+소제목
+-----
+```
+
+제목
+======
+
+소제목
+-----
+
+ 
+
+***
+# **줄 바꿈**
+```markdown
+줄바꿈 1, 뒤 쪽에 공백 두 칸
+줄바꿈 2\
+줄바꿈 3<br>
+끝
+```
+줄바꿈 1, 뒤 쪽에 공백 두 칸  
+줄바꿈 2\
+줄바꿈 3<br>
+끝
+
+
+
+***
+# **글꼴 관련**
+```markdown
+*이탤릭체*는 _이렇게_ 씁니다.  
+**볼드체**는 __이렇게__ 씁니다.  
+**_이탤릭체_와 볼드체**의 중첩도 가능합니다.  
+~~취소선은 이렇게 씁니다~~  
+<u>밑줄</u>은 `<u></u>`를 이용합니다. 
+```
+*이탤릭체*는 _이렇게_ 씁니다.  
+**볼드체**는 __이렇게__ 씁니다.  
+**_이탤릭체_와 볼드체**의 중첩도 가능합니다. 어 이상하다 된다고 했는데.  
+~~취소선은 이렇게 씁니다~~  
+<u>밑줄</u>은 `<u></u>`를 이용합니다.
+
+
+
+***
+# **목록**
+```markdown
+- 일반 목록
+	- 일반 목록
+		- 일반 목록
+
+1. 순서 목록
+1. 순서 목록
+	- 일반 목록 (대쉬)
+	* 일반 목록 (별표)
+	+ 일반 목록 (더하기)
+1. 순서 목록
+	1. 순서 소목록
+	1. 순서 소목록
+```
+- 일반 목록
+	- 일반 목록
+		- 일반 목록
+
+1. 순서 목록
+1. 순서 목록
+	- 일반 목록 (대쉬)
+	* 일반 목록 (별표)
+	+ 일반 목록 (더하기)
+1. 순서 목록
+	1. 순서 소목록
+	1. 순서 소목록
+
+
+
+***
+# **수평선**
+```markdown
+---
+이렇게
+
+***
+쓸 수
+
+___
+있대요.
+```
+---
+이렇게
+
+***
+쓸 수
+
+___
+있대요.
+
+
+
+***
+# **코드 강조**
+```markdown
+`hello World!`
+```
+`hello World!`  
+이걸 인라인 코드 강조라고 부른다고 하더라.
+
+```markdown
+	```c
+	#include <stdio.h>
+
+	int main(){
+		printf("Hello World!");
+	}
+	```
+
+	```python
+	print('Hello World!')
+	```
+
+	```java
+	public static void main(String[] args){
+		System.out.println("Hello World!");
+	}
+	```
+```
+
+```c
+#include <stdio.h>
+
+int main(){
+	printf("Hello World!");
+}
+```
+
+```python
+print('Hello World!')
+```
+
+```java
+public static void main(String[] args){
+	System.out.println("Hello World!");
+}
+```
+블록 코드 강조. 코드 종류도 적을 수 있다.
+
+
+
+***
+# **링크**
+```markdown
+[네이버](https://www.naver.com)  
+[구글](https://www.google.co.kr "링크 부연 설명")  
+[유튜브][youtube_link]  
+
+일반 링크: https://www.naver.com  
+이건 작동을 안 하네요.
+
+꺾쇠 괄호 링크: <https://www.naver.com>  
+
+[youtube_link]: https://www.youtube.com/
+```
+[네이버](https://www.naver.com)  
+[구글](https://www.google.co.kr "링크 부연 설명")  
+[유튜브][youtube_link]  
+
+일반 링크: https://www.naver.com  
+이건 작동을 안 하네요.
+
+꺾쇠 괄호 링크: <https://www.naver.com>  
+
+[youtube_link]: https://www.youtube.com/
+
+
+
+***
+# 인용문
+```
+> 이것은 인용문
+
+> 인용문은
+>> 중첩도 됩니다.
+>>> 내부에 `마크다운 문법`도 **쓸 수** ~~있대요.~~<br>
+>>> 신기하네요
+```
+
+> 이것은 인용문
+
+> 인용문은
+>> 중첩도 됩니다.
+>>> 내부에 `마크다운 문법`도 **쓸 수** ~~있대요.~~<br>
+>>> 신기하네요
+
+
+
+***
+# 표
+```
+| 기준값 1 | 기준값 2 | 기준값 3 | 기준값 4 |
+|---|:---:|---:|:---|
+| abc | def | ghi | jkl |
+| mno | pqr | stu | vwx |
+| yz | _표를 적자_ | **표를 적자** | ~~짝짝짝~~ |
+```
+
+| 기준값 1 | 기준값 2 | 기준값 3 | 기준값 4 |
+|---|:---:|---:|:---|
+| abc | def | ghi | jkl |
+| mno | pqr | stu | vwx |
+| yz | _표를 적자_ | **표를 적자** | ~~짝짝짝~~ |
+
+양 끝에 있는 `|`기호는 생략 가능하다고 한다.  
+헤더 셀을 구분할 때  세 개 이상의 `-` 기호를 쓰며, `:` 기호를 이용해	 해당 열의 내용을 정렬할 수 있다.
+
+
+
+<br><br><br>
+참고한 자료  
+<https://heropy.blog/2017/09/30/markdown/>  
+<https://www.irgroup.org/posts/usage-markdown/>
