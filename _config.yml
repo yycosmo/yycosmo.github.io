@@ -41,7 +41,7 @@ instagram:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: JUNYOUNG YANG
+  name: Manin
   email: jyoung0152@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -74,7 +74,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode:
+theme_mode: [light]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
