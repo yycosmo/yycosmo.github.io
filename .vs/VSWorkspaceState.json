@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\img",
-    "\\assets\\img\\20230313",
+    "\\_includes",
+    "\\_layouts",
     "\\_posts"
   ],
-  "SelectedNode": "\\_posts\\2022-11-20-Markdown 연습.markdown",
+  "SelectedNode": "\\_includes\\related-posts.html",
   "PreviewInSolutionExplorer": false
 }
