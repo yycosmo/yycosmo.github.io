@@ -198,7 +198,7 @@ tag: [html, study]
 ### **비디오**
 
 ```html
-<video src="비디오 파일 경로"></audio>
+<video src="비디오 파일 경로"></video>
 ```
 
 ### **오디오, 비디오 태그 속성**
