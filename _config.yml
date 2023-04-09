@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 title: Oddments                          # the main title
 
-tagline: 그림, 개발 공부하는 학생   # it will display as the sub-title
+tagline: 그림, 개발 공부   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   

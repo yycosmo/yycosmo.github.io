@@ -1,0 +1,313 @@
+---
+title:  "[HTML] 강의 정리 3. 입력 양식 작성"
+date:   2023-04-09
+categories: [Study, HTML]
+tag: [html, study]
+---
+
+구글 설문조사와 같이 사용자가 웹 사이트로 정보를 보낼 수 있는 양식을 만들어 보자.
+
+## **연습 1**
+
+```html
+<form>
+  <fieldset>
+    <legend>그룹 이름 1</legend>
+    <ul>
+      <li>
+        <input type="text">
+      </li>
+      <li>
+        <label>라벨 붙이기-직접<input type="text"></label>
+      </li>
+      <li>
+        <label for="user-id">라벨 붙이기-id로</label>
+        <input type="text" id="user-id">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>input-텍스트<input type="text"></label>
+      </li>
+      <li>
+        <label>input-비밀번호<input type="password"></label>
+      </li>
+      <li>
+        <p>input- radio</p>
+        <label>옵션 1<input type="radio" name="radio"></label>
+        <label>옵션 2<input type="radio" name="radio"></label>
+        <label>옵션 3<input type="radio" name="radio"></label>
+      </li>
+      <li>
+      <p>input-checkbox</p>
+        <label>옵션 a<input type="checkbox" value="a"></label>
+        <label>옵션 b<input type="checkbox" value="b"></label>
+        <label>옵션 c<input type="checkbox" value="c" checked></label>
+      </li>
+      <li>
+        <label>input-number<input type="number"></label>
+      </li>
+      <li>
+        <label>input-range<input type="range"></label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>그룹 이름 2</legend>
+  </fieldset>
+</form>
+```
+
+<form>
+  <fieldset>
+    <legend>그룹 이름 1</legend>
+    <ul>
+      <li>
+        <input type="text">
+      </li>
+      <li>
+        <label>라벨 붙이기-직접<input type="text"></label>
+      </li>
+      <li>
+        <label for="user-id">라벨 붙이기-id로</label>
+        <input type="text" id="user-id">
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label>input-텍스트<input type="text"></label>
+      </li>
+      <li>
+        <label>input-비밀번호<input type="password"></label>
+      </li>
+      <li>
+        <p>input- radio</p>
+        <label>옵션 1<input type="radio" name="radio"></label>
+        <label>옵션 2<input type="radio" name="radio"></label>
+        <label>옵션 3<input type="radio" name="radio"></label>
+      </li>
+      <li>
+      <p>input-checkbox</p>
+        <label>옵션 a<input type="checkbox" value="a"></label>
+        <label>옵션 b<input type="checkbox" value="b"></label>
+        <label>옵션 c<input type="checkbox" value="c" checked></label>
+      </li>
+      <li>
+        <label>input-number<input type="number"></label>
+      </li>
+      <li>
+        <label>input-range<input type="range"></label>
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset>
+    <legend>그룹 이름 2</legend>
+  </fieldset>
+</form>
+
+## **폼**
+
+`<form></form>` 태그를 이용해 기본적인 폼을 만들 수 있다.
+
+`<fieldset></fieldset>` 태그로 폼 요소들을 그룹으로 묶을 수 있다.<br>
+`<legend></legend>` 태그로 그룹으로 묶은 구역에 제목을 붙일 수 있다.
+
+## **input - 1**
+
+온갖 속성이 다 있지만, ppt에 언급된 몇 개만 작성
+
+### **text, password**
+
+`text`: 한 줄 짜리 텍스트 입력란<br>
+`password`: 비밀번호 입력란. 입력 내용이 `•`로 표시된다.
+
+### **radio, checkbox**
+
+`radio`: 여러 항목 중 하나만 선택하는 박스<br>
+`checkbox`: 여러 항목에서 다중 선택을 허용하는 박스
+
+| 속성 | 설명 |
+|:---|:---|
+| name | 여러 개의 라디오 혹은 체크박스를 구분하는 용도. 태그 같은 역할이라 생각하자. |
+| value | 선택한 요소를 서버로 전송할 때 넘길 값 지정 용도 |
+| checked | 삽입 시, 페이지를 로드할 때 체크된 채로 표시 |
+
+### **number, range**
+
+`number`: 숫자를 입력받는 필드<br>
+`range`: 숫자 입력 필드-슬라이드를 이용한
+
+| 속성 | 설명 |
+|:---|:---|
+| min | 입력 가능한 최소값 지정 |
+| max | 입력 가능한 최대값 지정 |
+| step | 숫자 간격 지정 |
+| value | 초기값 지정 |
+
+## **연습 2**
+
+```html
+<ul>
+  <li>
+    <input type="date">
+  </li>
+  <li>
+    <input type="month">
+  </li>
+  <li>
+    <input type="week">
+  </li>
+</ul>
+<ul>
+  <li>
+    <input type="time">
+  </li>
+  <li>
+    <input type="datetime-local">
+  </li>
+</ul>
+<label>example<input type="text"></label>
+<div>
+  <input type="submit" value="신청하기">
+  <input type="reset" value="취소">
+</div>
+<ul>
+  <li>
+    <input type="button" value="버튼이랍니다">
+  </li>
+  <li>
+    <input type="file">
+  </li>
+  <li>
+    <input type="hidden" value="서버로 넘길 값">
+  </li>
+</ul>
+<ul>
+  <li>
+    <input type="text" autofocus>
+  </li>
+  <li>
+    <input type="text" placeholder="입력창 가이드">
+  </li>
+  <li>
+    <input type="text" value="핫하 이 곳엔 입력하지 못한다" readonly>
+  </li>
+  <li>
+    <input type="text" required>
+  </li> 
+</ul>
+<label for="area">textarea</label>
+<textarea type="text" id="area"></textarea>
+```
+
+<ul>
+  <li>
+    <input type="date">
+  </li>
+  <li>
+    <input type="month">
+  </li>
+  <li>
+    <input type="week">
+  </li>
+</ul>
+<ul>
+  <li>
+    <input type="time">
+  </li>
+  <li>
+    <input type="datetime-local">
+  </li>
+</ul>
+<label>example<input type="text"></label>
+<div>
+  <input type="submit" value="신청하기">
+  <input type="reset" value="취소">
+</div>
+<ul>
+  <li>
+    <input type="button" value="버튼이랍니다">
+  </li>
+  <li>
+    <input type="file">
+  </li>
+  <li>
+    <input type="hidden" value="서버로 넘길 값">
+  </li>
+</ul>
+<ul>
+  <li>
+    <input type="text" autofocus>
+  </li>
+  <li>
+    <input type="text" placeholder="입력창 가이드">
+  </li>
+  <li>
+    <input type="text" value="핫하 이 곳엔 입력하지 못한다" readonly>
+  </li>
+  <li>
+    <input type="text" required>
+  </li> 
+</ul>
+<label for="area">textarea</label>
+<textarea type="text" id="area"></textarea>
+
+## **input - 2**
+
+### **date, month, week**
+
+`date`: 달력에서 날짜 선택해 입력 가능<br>
+`month`: 달력에서 월 선택해 입력 가능<br>
+`year`: 달력에서 주를 선택해 입력 가능
+
+### **time, datetime-local**
+
+`time`: 폼에서 시간 입력 가능<br>
+`datetime-local`: 사용자가 웹 문서를 보고 있는 지역에 맞는 시간과 날짜를 함께 입력 가능
+
+### **submit, reset**
+
+`submit`: 전송 버튼. 사용자의 입력 내용을 서버로 전송할 때 사용<br>
+`reset`: 사용자의 입력 내용을 전부 삭제한다
+
+근데 왜 여기서는 작동을 안 하는 걸까.
+
+### **image**
+
+`submit` 버튼 대신 이미지를 삽입한다.
+
+```html
+<input type="image" src="이미지 경로" alt="대체 텍스트">
+```
+
+### **button, file**
+
+`button`: 기능 없이 버튼 형태만 삽입. 주로 자바스크립트와 연동해서 사용한다고 한다.
+
+`file`: 파일 첨부 기능 수행
+
+### **hidden**
+
+화면 상의 폼에는 보이지 않으며, 폼을 서버로 전송할 때 서버로 함께 전송된다.
+
+### **autofocus, placeholder, readonly, required**
+
+`autofocus`: 페이지 로드 시 해당 요쇼에 마우스 커서 표시<br>
+`placeholder`: 입력란에 표시하는 가이드 역할<br>
+`readonly`: 읽기만 가능. 입력은 불가능하다.<br>
+`required`: 필수 필드 체크. 오류 메세지도 뜬다는데 여기는 왜 안 뜨는걸까.
+
+### **textarea**
+
+여러 줄의 텍스트 입력이 가능하다
+
+| 속성 | 설명 |
+|:---|:---|
+| cols | 텍스트 영역의 가로 너비를 문자 단위로 지정 |
+| rows | 텍스트 영역의 세로 길이를 줄 단위로 지정. 지정 숫자보다 줄이 많아지면 스크롤 막대 표시 |
+
+## **여담**
+
+이런 식으로 예제 코드까지 작성하는 것은 어쩐지 시간 면에서 비효율적인 것 같다.<br>
+일단 1차 목표는 시험공부이기에, 그에 걸맞은 방식으로 공부하자. 당장 중간고사가 목전에 다가왔으니 더 이상 여유는 없다.<br>
+태그별 특징 사용처와 사용 방법 등 중요한 내용만 정리하는 것이 낫겠다. 솔직히 실전에서는 구글링으로 찾으면 될 테니까. 이걸 다 외울 생각으로 정리하는 건 아니잖아. 한 번씩 써 보고 이해하려고 하는 거니.<br>
