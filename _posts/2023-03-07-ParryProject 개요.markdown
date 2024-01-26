@@ -1,7 +1,7 @@
 ---
 title:  "[ParryProject] 개요"
 date:   2023-03-07
-categories: [Unity, ParryProject]
+categories: [ParryProject]
 tag: [unity, game, study]
 ---
 
