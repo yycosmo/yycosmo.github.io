@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\_posts"
+    "\\assets",
+    "\\assets\\img",
+    "\\assets\\img\\20240126",
+    "\\_posts",
+    "\\_posts\\template",
+    "\\_tabs"
   ],
-  "SelectedNode": "\\_posts\\2023-04-16-HTML_5.markdown",
+  "SelectedNode": "\\assets\\img\\20240126",
   "PreviewInSolutionExplorer": false
 }
